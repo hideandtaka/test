@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="製品・サービス紹介のランディングページ">
+    <title>製品・サービス紹介 | LP</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- ヘッダー -->
+    <header class="header">
+        <nav class="nav container">
+            <div class="nav-brand">
+                <h2>YourBrand</h2>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#hero" class="nav-link">ホーム</a></li>
+                <li><a href="#features" class="nav-link">特徴</a></li>
+                <li><a href="#contact" class="nav-link">お問い合わせ</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle" aria-label="メニューを開く">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- ヒーローセクション -->
+    <section id="hero" class="hero">
+        <div class="hero-content container">
+            <h1 class="hero-title">
+                あなたのビジネスを<br>
+                次のレベルへ
+            </h1>
+            <p class="hero-description">
+                革新的なソリューションで、ビジネスの成長をサポートします。<br>
+                今すぐ始めて、未来を切り開きましょう。
+            </p>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn btn-primary">今すぐ始める</a>
+                <a href="#features" class="btn btn-secondary">詳しく見る</a>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <!-- プレースホルダーとしてCSSで背景を表示 -->
+        </div>
+    </section>
+
+    <!-- 特徴セクション -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2 class="section-title">主な特徴</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3 class="feature-title">高速処理</h3>
+                    <p class="feature-description">
+                        最新技術により、従来の10倍のスピードで処理を実行します。
+                    </p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔒</div>
+                    <h3 class="feature-title">安全性</h3>
+                    <p class="feature-description">
+                        業界最高水準のセキュリティで、大切なデータを守ります。
+                    </p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3 class="feature-title">分析機能</h3>
+                    <p class="feature-description">
+                        詳細な分析ツールで、ビジネスの成長を可視化します。
+                    </p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🌐</div>
+                    <h3 class="feature-title">グローバル対応</h3>
+                    <p class="feature-description">
+                        世界中どこからでもアクセス可能。多言語対応も完備。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- お問い合わせセクション -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">お問い合わせ</h2>
+            <p class="contact-description">
+                ご質問やご相談は、お気軽にお問い合わせください。
+            </p>
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="name">お名前</label>
+                    <input type="text" id="name" name="name" required placeholder="山田 太郎">
+                </div>
+                <div class="form-group">
+                    <label for="email">メールアドレス</label>
+                    <input type="email" id="email" name="email" required placeholder="example@email.com">
+                </div>
+                <div class="form-group">
+                    <label for="message">メッセージ</label>
+                    <textarea id="message" name="message" rows="5" required placeholder="お問い合わせ内容をご記入ください"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">送信する</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- フッター -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 YourBrand. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#">プライバシーポリシー</a>
+                <a href="#">利用規約</a>
+                <a href="#">お問い合わせ</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
