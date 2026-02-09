@@ -1,7 +1,9 @@
 {
   "permissions": {
     "allow": [
-      "Bash(git checkout:*)"
+      "Bash(git checkout:*)",
+      "WebFetch(domain:web.archive.org)",
+      "WebFetch(domain:www.tokyo-tsukemono.com)"
     ]
   }
 }

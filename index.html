@@ -3,8 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="製品・サービス紹介のランディングページ">
-    <title>製品・サービス紹介 | LP</title>
+    <meta name="description" content="株式会社ハギワラ - 昭和38年創業。豆腐・漬物の製造卸。安心・安全のおいしさを食卓へお届けします。">
+    <title>株式会社ハギワラ | 豆腐・漬物の製造卸</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;600;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,11 +15,13 @@
     <header class="header">
         <nav class="nav container">
             <div class="nav-brand">
-                <h2>YourBrand</h2>
+                <h2>株式会社ハギワラ</h2>
             </div>
             <ul class="nav-menu" id="navMenu">
                 <li><a href="#hero" class="nav-link">ホーム</a></li>
-                <li><a href="#features" class="nav-link">特徴</a></li>
+                <li><a href="#about" class="nav-link">私たちについて</a></li>
+                <li><a href="#products" class="nav-link">商品紹介</a></li>
+                <li><a href="#company" class="nav-link">会社概要</a></li>
                 <li><a href="#contact" class="nav-link">お問い合わせ</a></li>
             </ul>
             <button class="nav-toggle" id="navToggle" aria-label="メニューを開く">
@@ -29,58 +34,175 @@
 
     <!-- ヒーローセクション -->
     <section id="hero" class="hero">
+        <div class="hero-overlay"></div>
         <div class="hero-content container">
+            <p class="hero-sub">昭和38年創業</p>
             <h1 class="hero-title">
-                あなたのビジネスを<br>
-                次のレベルへ
+                安心・安全のおいしさを、<br>食卓へ。
             </h1>
             <p class="hero-description">
-                革新的なソリューションで、ビジネスの成長をサポートします。<br>
-                今すぐ始めて、未来を切り開きましょう。
+                創業以来60年以上にわたり、厳選された素材と伝統の技で<br>
+                豆腐・漬物をお届けしてまいりました。
             </p>
             <div class="hero-buttons">
-                <a href="#contact" class="btn btn-primary">今すぐ始める</a>
-                <a href="#features" class="btn btn-secondary">詳しく見る</a>
+                <a href="#products" class="btn btn-primary">商品を見る</a>
+                <a href="#about" class="btn btn-secondary">私たちについて</a>
             </div>
-        </div>
-        <div class="hero-visual">
-            <!-- プレースホルダーとしてCSSで背景を表示 -->
         </div>
     </section>
 
-    <!-- 特徴セクション -->
-    <section id="features" class="features">
+    <!-- 私たちについてセクション -->
+    <section id="about" class="about">
         <div class="container">
-            <h2 class="section-title">主な特徴</h2>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">⚡</div>
-                    <h3 class="feature-title">高速処理</h3>
-                    <p class="feature-description">
-                        最新技術により、従来の10倍のスピードで処理を実行します。
+            <h2 class="section-title">私たちについて</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3 class="about-heading">経営理念</h3>
+                    <p class="about-philosophy">
+                        「お客様に満足していただける、<br>安心安全で、魅力溢れるものづくり」
+                    </p>
+                    <p class="about-description">
+                        株式会社ハギワラは、昭和38年（1963年）に漬物製造卸として創立いたしました。
+                        以来60年以上にわたり、食の安心・安全を第一に考え、
+                        厳選した国産素材を使用した豆腐と漬物の製造卸を続けてまいりました。
+                    </p>
+                    <p class="about-description">
+                        長年培ってきた伝統の技と、時代に合わせた品質管理のもと、
+                        皆さまの食卓に笑顔をお届けすることが私たちの使命です。
                     </p>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-icon">🔒</div>
-                    <h3 class="feature-title">安全性</h3>
-                    <p class="feature-description">
-                        業界最高水準のセキュリティで、大切なデータを守ります。
+                <div class="about-features">
+                    <div class="about-feature-item">
+                        <span class="about-feature-number">60+</span>
+                        <span class="about-feature-label">年以上の歴史</span>
+                    </div>
+                    <div class="about-feature-item">
+                        <span class="about-feature-number">国産</span>
+                        <span class="about-feature-label">厳選素材を使用</span>
+                    </div>
+                    <div class="about-feature-item">
+                        <span class="about-feature-number">20+</span>
+                        <span class="about-feature-label">種類以上の漬物</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 商品紹介セクション -->
+    <section id="products" class="products">
+        <div class="container">
+            <h2 class="section-title">商品紹介</h2>
+
+            <!-- 豆腐カテゴリ -->
+            <h3 class="category-title">豆腐</h3>
+            <p class="category-description">豆乳濃度13%、国産大豆を100%使用したこだわりの豆腐です。</p>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-icon">塩</div>
+                    <h4 class="product-title">塩とうふ</h4>
+                    <p class="product-description">
+                        国産大豆を使用し、豆乳濃度13%のこだわり製法で仕上げた当社の看板商品。
+                        大豆の旨みが凝縮された、しっかりとした味わいが特徴です。
                     </p>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-icon">📊</div>
-                    <h3 class="feature-title">分析機能</h3>
-                    <p class="feature-description">
-                        詳細な分析ツールで、ビジネスの成長を可視化します。
+                <div class="product-card">
+                    <div class="product-icon">味</div>
+                    <h4 class="product-title">味噌とうふ</h4>
+                    <p class="product-description">
+                        厳選された味噌と国産大豆の組み合わせ。豆乳濃度13%ならではの
+                        濃厚な味わいと、味噌の風味が絶妙にマッチします。
                     </p>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-icon">🌐</div>
-                    <h3 class="feature-title">グローバル対応</h3>
-                    <p class="feature-description">
-                        世界中どこからでもアクセス可能。多言語対応も完備。
+            </div>
+
+            <!-- 漬物カテゴリ -->
+            <h3 class="category-title">漬物</h3>
+            <p class="category-description">伝統的な製法で丁寧に漬け込んだ、20種類以上の漬物をご用意しております。</p>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-icon">梅</div>
+                    <h4 class="product-title">梅干し</h4>
+                    <p class="product-description">
+                        昔ながらの製法で丁寧に漬け込んだ梅干し。ご飯のお供に最適です。
                     </p>
                 </div>
+                <div class="product-card">
+                    <div class="product-icon">沢</div>
+                    <h4 class="product-title">たくあん</h4>
+                    <p class="product-description">
+                        パリッとした食感と程よい塩加減が自慢。お弁当やお食事のお供にどうぞ。
+                    </p>
+                </div>
+                <div class="product-card">
+                    <div class="product-icon">福</div>
+                    <h4 class="product-title">福神漬</h4>
+                    <p class="product-description">
+                        カレーライスの定番。7種類の野菜を甘辛い調味液で漬け込みました。
+                    </p>
+                </div>
+                <div class="product-card">
+                    <div class="product-icon">野</div>
+                    <h4 class="product-title">野沢菜</h4>
+                    <p class="product-description">
+                        信州の伝統的な漬物。シャキシャキの食感とさっぱりした味わいです。
+                    </p>
+                </div>
+                <div class="product-card">
+                    <div class="product-icon">辛</div>
+                    <h4 class="product-title">キムチ</h4>
+                    <p class="product-description">
+                        本格的な味わいのキムチ。白菜のシャキシャキ感と辛みのバランスが絶妙。
+                    </p>
+                </div>
+                <div class="product-card">
+                    <div class="product-icon">浅</div>
+                    <h4 class="product-title">浅漬け</h4>
+                    <p class="product-description">
+                        新鮮な野菜をさっぱりと漬け込んだ浅漬け。季節の素材を活かしています。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 会社概要セクション -->
+    <section id="company" class="company">
+        <div class="container">
+            <h2 class="section-title">会社概要</h2>
+            <div class="company-table-wrapper">
+                <table class="company-table">
+                    <tbody>
+                        <tr>
+                            <th>社名</th>
+                            <td>株式会社ハギワラ</td>
+                        </tr>
+                        <tr>
+                            <th>所在地</th>
+                            <td>〒121-0052 東京都足立区六木4-3-19</td>
+                        </tr>
+                        <tr>
+                            <th>電話番号</th>
+                            <td>03-3620-7117</td>
+                        </tr>
+                        <tr>
+                            <th>FAX</th>
+                            <td>03-5697-6792</td>
+                        </tr>
+                        <tr>
+                            <th>創業</th>
+                            <td>昭和38年（1963年）</td>
+                        </tr>
+                        <tr>
+                            <th>事業内容</th>
+                            <td>豆腐・漬物の製造卸</td>
+                        </tr>
+                        <tr>
+                            <th>工場</th>
+                            <td>茨城県常総市内守谷町4128</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
     </section>
@@ -90,35 +212,53 @@
         <div class="container">
             <h2 class="section-title">お問い合わせ</h2>
             <p class="contact-description">
-                ご質問やご相談は、お気軽にお問い合わせください。
+                商品に関するご質問やお取引のご相談など、お気軽にお問い合わせください。
             </p>
-            <form class="contact-form">
-                <div class="form-group">
-                    <label for="name">お名前</label>
-                    <input type="text" id="name" name="name" required placeholder="山田 太郎">
+            <div class="contact-wrapper">
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name">お名前</label>
+                        <input type="text" id="name" name="name" required placeholder="山田 太郎">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">メールアドレス</label>
+                        <input type="email" id="email" name="email" required placeholder="example@email.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">電話番号</label>
+                        <input type="tel" id="phone" name="phone" placeholder="03-1234-5678">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">メッセージ</label>
+                        <textarea id="message" name="message" rows="5" required placeholder="お問い合わせ内容をご記入ください"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">送信する</button>
+                </form>
+                <div class="contact-info">
+                    <h3 class="contact-info-title">連絡先情報</h3>
+                    <div class="contact-info-item">
+                        <span class="contact-info-label">電話</span>
+                        <span class="contact-info-value">03-3620-7117</span>
+                    </div>
+                    <div class="contact-info-item">
+                        <span class="contact-info-label">FAX</span>
+                        <span class="contact-info-value">03-5697-6792</span>
+                    </div>
+                    <div class="contact-info-item">
+                        <span class="contact-info-label">住所</span>
+                        <span class="contact-info-value">〒121-0052<br>東京都足立区六木4-3-19</span>
+                    </div>
                 </div>
-                <div class="form-group">
-                    <label for="email">メールアドレス</label>
-                    <input type="email" id="email" name="email" required placeholder="example@email.com">
-                </div>
-                <div class="form-group">
-                    <label for="message">メッセージ</label>
-                    <textarea id="message" name="message" rows="5" required placeholder="お問い合わせ内容をご記入ください"></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary btn-block">送信する</button>
-            </form>
+            </div>
         </div>
     </section>
 
     <!-- フッター -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2026 YourBrand. All rights reserved.</p>
-            <div class="footer-links">
-                <a href="#">プライバシーポリシー</a>
-                <a href="#">利用規約</a>
-                <a href="#">お問い合わせ</a>
-            </div>
+            <div class="footer-brand">株式会社ハギワラ</div>
+            <p class="footer-address">〒121-0052 東京都足立区六木4-3-19</p>
+            <p class="footer-copyright">&copy; 2026 株式会社ハギワラ All rights reserved.</p>
         </div>
     </footer>
 
